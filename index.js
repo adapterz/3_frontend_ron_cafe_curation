@@ -4,6 +4,7 @@ const app = express();
 
 const indexRouter = require('./src/routes/index.routes');
 
+app.use(express.static('public'));
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
