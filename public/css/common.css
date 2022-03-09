@@ -13,3 +13,11 @@ input:focus {
   clip-path: inset(50%);
   display: inline-block;
 }
+#content {
+  display: flex;
+  justify-content: center;
+}
+#content > article {
+  width: 1200px;
+  min-width: 350px;
+}
