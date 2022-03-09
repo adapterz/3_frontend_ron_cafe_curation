@@ -17,6 +17,9 @@
   background-color: #fff;
   box-shadow: 0 5px 8px 0 rgb(68 68 68);
 }
+#register-form > .title {
+  margin: 2rem auto;
+}
 #preview-image {
   position: absolute;
   top: 1.5rem;
