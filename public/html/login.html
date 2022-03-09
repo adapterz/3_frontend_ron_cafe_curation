@@ -11,6 +11,11 @@
     <title>로그인 | JJINCAFE IN SEOUL</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/login.page.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/favicon.ico"
+    />
   </head>
   <body>
     <!-- 헤더 -->
@@ -38,7 +43,6 @@
         <div class="modal__content">
           <a href="/main">메인</a>
           <a href="/top-lists">평점 높은 카페 리스트</a>
-          <a href="/login">로그인</a>
           <a href="/service#contact">문의하기</a>
         </div>
       </div>
@@ -54,34 +58,39 @@
         action="https://api.jjincafe-in-seoul.com/users"
         method="post"
       >
-        <label for="email-address">이메일 주소</label>
-        <div class="input-wrap">
-          <input
-            id="email-address"
-            class="login-input"
-            autocomplete="off"
-            name="email"
-            placeholder="이메일"
-            required="required"
-            type="email"
-          />
-          <span class="icon-wrap">
-            <i class="fas fa-envelope"></i>
-          </span>
+        <h1 class="welcome">어서 오세요</h1>
+        <div class="form-control">
+          <label for="email-address">이메일 주소</label>
+          <div class="input-wrap">
+            <input
+              id="email-address"
+              class="login-input"
+              autocomplete="off"
+              name="email"
+              placeholder="이메일"
+              required="required"
+              type="email"
+            />
+            <span class="icon-wrap">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
         </div>
-        <label for="password">비밀번호</label>
-        <div class="input-wrap">
-          <input
-            id="password"
-            class="login-input"
-            name="password"
-            required="required"
-            type="password"
-            placeholder="비밀번호"
-          />
-          <span class="icon-wrap pwd-reveal">
-            <i class="fas fa-eye"></i>
-          </span>
+        <div class="form-control">
+          <label for="password">비밀번호</label>
+          <div class="input-wrap">
+            <input
+              id="password"
+              class="login-input"
+              name="password"
+              required="required"
+              type="password"
+              placeholder="비밀번호"
+            />
+            <span class="icon-wrap pwd-reveal">
+              <i class="fas fa-eye"></i>
+            </span>
+          </div>
         </div>
         <div class="checkbox-wrap">
           <input id="remember-me" type="checkbox" />
